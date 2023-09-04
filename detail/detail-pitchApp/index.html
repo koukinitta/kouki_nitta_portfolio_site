@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>「投手成績管理アプリ」の紹介</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header>
+    <div class="header__container">
+      <div class="hbg">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <h1 class="header__logo">Pitch App</h1>
+    </div>
+  </header>
+
+  <div class="detail">
+    <div class="work__container">
+      <h1 class="detail__title">Pitch App</h1>
+      <div class="first">
+        <div class="first__img"><img src="./img/pitch-app.png" alt=""></div>
+        <div class="first__text">
+          <h2>制作期間</h2>
+          <p>2023年7月18日(およそ8時間)</p>
+          <h2>制作背景</h2>
+          <p>今まではwebページを作る学習に励んでいましたが、2023年の6月から簡単なアプリの開発の学習を始めました。オンラインサービスで基礎を学んだのち、初めて自分で一から制作したアプリです。作ろうと思った経緯は、私は小学校から野球を続けており、リアルタイムで投手成績を管理するアプリがあればいいなと感じたのがきっかけです。既存の成績管理アプリはリアルタイムで入力するには手間がかかり、投球数などは試合後忘れてしまうことが多く管理が難しいと感じていました。<br>このアプリは、ワンタップでカウントが可能であり、間違えて入力した際も訂正が簡単です。また野球場にパソコンを持ち込むことは考えにくいので、スマートフォンでの操作を前提としており、レスポンシブにも対応しています。<br>また、投手の能力を示す計算を要する指標も4つ用意しており、こちらもリアルタイムで自動で更新されます。今後改善するとすれば、試合時間を計測するタイマーや、指標を増やす事でこのアプリの可能性を高めることができると感じています。</p>
+        </div>
+      </div>
+      <div class="second">
+        <div class="second__text">
+          <h2>使用したツール</h2>
+          <p>見た目はHTMLとSASSを用いてコーディングしました。機能は全てJavaScriptで実装しております。コード自体は計算が多く、比較的シンプルなコードになっていると感じています。
+          </p>
+        </div>
+        <div class="second__img">
+          <img src="./img/pitch-app-res.png" alt="">
+          <img src="./img/pitch-app-res-2.png" alt="">
+        </div>
+      </div>
+      <div class="thoughts">
+        <h2>作り終えての感想</h2>
+        <p>自分が必要だと感じたアプリを制作することは、非常に楽しく今までで一番熱中して作ることができました。難しかった点は、投球回のカウント方法です。投球回は1アウトで3分の1回とカウントされるので、マイナスボタンを押した時の挙動や、値がマイナスにならないようにコードを書くのは苦労しました。今後は、さまざまなメソッドを用いて多機能で実際に使えそうなアプリを作っていきたいと感じました。またfor文が苦手なので克服できればと思います。</p>
+      </div>
+      <a href="../gallery/pitchApp/index.html" class="url__button"><p>このサイトを見る</p></a>
+    </div>
+  </div>
+
+  <div class="drawer">
+    <div class="hbg">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="drawer__box">
+      <div class="drawer__menu"><a href="../../index.html#gallery">Gallery</a></div>
+      <div class="drawer__menu"><a href="../../index.html#profile">Profile</a></div>
+      <div class="drawer__menu"><a href="../../index.html#contact">Contact</a></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer__container">
+      <p class="footer__text">©️nitusta</p>
+    </div>
+  </footer>
+  <script src="./js/wow.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

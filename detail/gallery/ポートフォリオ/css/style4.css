@@ -1,0 +1,411 @@
+/* 共通のcss */
+a {
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+    opacity: 0.7;
+    color: #333;
+}
+p {
+    color: #333;
+}
+h1 h2 h3 h4 h5 h6 {
+    color: #333;
+}
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+
+/* header */
+header {
+    background-color: antiquewhite;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    border-bottom: #cdb49a solid 2px;
+}
+.header-wrapper {
+    width: 100%;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 60%;
+}
+.header-right {
+    line-height: 56px;
+}
+.header-ul {
+    display: flex;
+    line-height: 66px;
+}
+.header-li {
+    padding-left: 45px;
+    text-align: center;
+    font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+}
+.header-li a {
+    color: #6f6152;
+    font-weight: bold;
+}
+
+/* top */
+/* .top {
+    width: 100%;
+    background-image: url(../img/top_back.png);
+    background-size: cover;
+} */
+.top {
+    height: 100vh;
+    background-color: antiquewhite;
+    border-bottom: #cdb49a solid 2px;
+}
+.top-back {
+    width: 100%;
+}
+.top-title {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 350px;
+    color: #6f6152;
+    letter-spacing: 15px;
+    font-weight: bold;
+    font-family: 'HoeflerText-Black',sans-serif;
+}
+.top-text {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 50px;
+    color: #6f6152;
+    letter-spacing: 15px;
+    font-family: 'HoeflerText-Black',sans-serif;
+}
+/* myData */
+.myData {
+    background-color: antiquewhite;
+    border-bottom: #cdb49a solid 2px;
+}
+.myData-title {
+    font-size: 40px;
+    color: #6f6152;
+    font-family: 'HoeflerText-Black',sans-serif;
+    padding-bottom: 0.7em;
+    text-decoration: underline;
+}
+.myData-text {
+    color: #6f6152;
+    font-weight: bold;
+}
+.myData-left p{
+    line-height: 2em;
+    font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+}
+.myData-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.myData-left {
+    width: 45%;
+    padding: 80px 0;
+    padding-left: 5%;
+    overflow-wrap: break-word;
+}
+.myData-right {
+    width: 50%;
+    padding: 80px 0;
+    text-align: center;
+    vertical-align: middle;
+}
+.myData-img {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 1px 6px #333;
+}
+
+/* skill */
+.skill {
+    background-color: antiquewhite;
+    padding: 80px 0;
+}
+.skill-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.skill-title {
+    font-size: 40px;
+    color: #6f6152;
+    font-family: 'HoeflerText-Black',sans-serif;
+    padding-left: 5%;
+    padding-bottom: 0.7em;
+    text-decoration: underline;
+}
+.skill-box {
+    width: 27.5%;
+    height: 25vw;
+    border-radius: 5px;
+    border: #cdb49a solid 2px;
+    position: relative;
+    cursor: pointer;
+}
+.front,.back {
+    transition: all 0.6s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back {
+    transform: rotateY(-180deg);
+}
+.skill-box:hover .front {
+    transform: rotateY(180deg);
+}
+.skill-box:hover .back {
+    transform: rotateY(0);
+}
+.skill-box img {
+    width: 70%;
+}
+.skill-box p {
+    color: #6f6152;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: bold;
+    padding: 0 10%;
+    font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+}
+.skill-box-left {
+    margin-left: 5%;
+}
+.skill-box-right {
+    margin-right: 5%;
+}
+
+/* gallery */
+.gallery {
+    background-color: antiquewhite;
+    padding: 80px 0;
+    border-top: #cdb49a solid 2px;
+}
+.gallery-title {
+    font-size: 40px;
+    color: #6f6152;
+    font-family: 'HoeflerText-Black',sans-serif;
+    padding-left: 5%;
+    padding-bottom: 0.7em;
+    text-decoration: underline;
+}
+.gallery-parts {
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.example {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin:0 1%;
+    border-radius: 5px;
+    box-shadow: 0px 1px 6px #333;
+}
+.example img {
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+.example a {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    opacity: 0.8;
+    text-align: center;
+    padding: 10% 20%;
+    background-color:#cdb49a
+}
+.example a:hover {
+    opacity: 0.6;
+}
+
+/* contact */
+.contact {
+    background-color: antiquewhite;
+    padding: 80px 0;
+    border-top: #cdb49a solid 2px;
+}
+.contact-title {
+    font-size: 40px;
+    color: #6f6152;
+    font-family: 'HoeflerText-Black',sans-serif;
+    padding-left: 5%;
+    padding-bottom: 0.7em;
+    text-decoration: underline;
+}
+.contact-box {
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+}
+.meen-top {
+    display: flex;
+    justify-content: center;
+}
+.meen-top img {
+    width: 20%;
+}
+.meen-top-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3%;
+}
+.twitter,.email {
+    font-size: 28px;
+    font-family: 'HoeflerText-Black',sans-serif;
+    color: #6f6152;
+}
+.link {
+    font-size: 16px;
+    font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+    color: #6f6152;
+    font-weight: bold;
+    padding: 5px 2px;
+}
+.link:hover {
+    opacity: 0.6;
+}
+/* footer */
+.footer {
+    background-color: rgb(67, 59, 46);
+    clear: both;
+}
+.footer p {
+    color: antiquewhite;
+    text-align: right;
+    padding: 20px 5%;
+    font-size: 14px;
+}
+
+
+
+/* レスポンシブ  768px以下での表示*/
+@media screen and (max-width:768px) {
+    /* 共通 */
+    .title {
+        font-size: 28px;
+    }
+    /* header */
+    header {
+        position: static;
+    }
+    .header-ul {
+        display: none;
+    }
+    /* top */
+    .top-title {
+        padding-top: 300px;
+        font-size: 32px;
+        letter-spacing: 13px;
+    }
+    .top-text {
+        padding-top: 25px;
+        font-size: 16px;
+        letter-spacing: 13px;
+    }
+    /* myData */
+    .myData-flex {
+        display: block;
+    }
+    .myData-left {
+        width: 100%;
+        font-size: 14px;
+        padding: 80px 5% 0 5%;
+    }
+    .myData-right {
+        width: 90%;
+        margin: 0 auto;
+        padding: 25px 0 80px 0;
+    }
+    /* skill */
+    .skill-box p{
+        font-size: 14px;
+    }
+    /* gallery */
+    /* contact */
+    /* footer */
+    .footer p {
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:551px) {
+    /* 共通 */
+    /* top */
+    /* myData */
+    .myData-left {
+        padding: 80px 0 0 0;
+        font-size: 14px;
+    }
+    .myData-right {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .myData-img {
+        width: 100%;
+    }
+    /* skill */
+    .skill-wrapper {
+        display: block;
+    }
+    .skill-box {
+        margin: 20px auto;
+        width: 75%;
+        height: 200px;
+    }
+    .skill-box p {
+        font-size: 16px;
+    }
+    /* gallery */
+    .gallery-parts {
+        display: block;
+    }
+    .example {
+        width: 80%;
+        margin: 0 auto 30px auto;
+    }
+    /* contact */
+    /* footer */
+}
+@media screen and (max-width:500px) {
+    /* header */
+    .logo {
+        width: 40%;
+    }
+    /* skill */
+    .skill-box p {
+        font-size: 14px;
+    }
+    /* contact */
+    .contact {
+        padding-bottom: 20px;
+    }
+    .contact-box {
+        display: block;
+    }
+    .meen-top {
+        padding-bottom: 20px;
+    }
+}

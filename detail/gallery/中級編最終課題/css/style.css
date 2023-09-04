@@ -1,0 +1,1578 @@
+@charset "UTF-8";
+/*===================================
+  font
+===================================*/
+/*===================================
+  共通
+===================================*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+.section__title {
+  font-size: 36px;
+  font-family: "Montserrat";
+  line-height: 44px;
+  color: #3e3e3e;
+  font-weight: bold;
+  padding: 56px 0;
+}
+@media (max-width: 375px) {
+  .section__title {
+    padding: 40px 0;
+    font-size: 30px;
+  }
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+/*===================================
+  header
+===================================*/
+header {
+  height: 83px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.header__container {
+  background-color: rgba(255, 255, 255, 0.1019607843);
+  width: 100%;
+}
+.header__container ul {
+  display: flex;
+  justify-content: center;
+}
+.header__container ul .header__li {
+  padding: 0 20px;
+  letter-spacing: -0.4px;
+  line-height: 83px;
+  font-size: 16px;
+}
+.header__container ul .header__li a {
+  text-decoration: none;
+  color: #3e3e3e;
+}
+.header__container ul .header__li a:hover {
+  opacity: 0.5;
+}
+@media (max-width: 767px) {
+  .header__container {
+    display: none;
+  }
+}
+
+.sp {
+  width: 100%;
+  padding: 20px 16px;
+  background-color: #fff;
+  display: none;
+}
+@media (max-width: 767px) {
+  .sp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sp .hamburger {
+    display: block;
+  }
+  .sp .hamburger img {
+    width: 26px;
+  }
+}
+.sp .sp__title {
+  font-size: 23px;
+  line-height: 28px;
+  color: #3e3e3e;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+/*===================================
+  top
+===================================*/
+.top {
+  height: 648px;
+  width: 100%;
+  background: transparent url(../img/top.png) no-repeat left top/cover;
+  position: relative;
+  text-align: left;
+  padding: 0 40px;
+}
+@media (max-width: 375px) {
+  .top {
+    padding: 0 16px;
+    height: 667px;
+    padding-top: 68px;
+  }
+}
+
+.top__container {
+  position: absolute;
+  left: 50%;
+  top: 236px;
+  margin: 0 40px;
+}
+@media (max-width: 800px) {
+  .top__container {
+    position: inherit;
+    width: 100%;
+    left: -40px;
+  }
+}
+@media (max-width: 375px) {
+  .top__container {
+    position: inherit;
+    width: 100%;
+    left: -16px;
+    top: 161px;
+    margin: 0 16px;
+  }
+}
+
+.top__title {
+  font-size: 32px;
+  color: #3e3e3e;
+  line-height: 48px;
+  letter-spacing: 0.02px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: bold;
+  padding-bottom: 32px;
+}
+@media (max-width: 1073px) {
+  .top__title {
+    font-size: 28px;
+    line-height: 44px;
+  }
+}
+@media (max-width: 945px) {
+  .top__title {
+    font-size: 26px;
+  }
+}
+@media (max-width: 375px) {
+  .top__title {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+
+.top__text {
+  font-size: 18px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.45px;
+  color: #3e3e3e;
+  line-height: 28px;
+  padding-bottom: 34px;
+}
+@media (max-width: 1073px) {
+  .top__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 945px) {
+  .top__text {
+    font-size: 15px;
+  }
+}
+@media (max-width: 375px) {
+  .top__text {
+    line-height: 20px;
+    font-size: 14px;
+  }
+}
+
+.top__contact {
+  color: #fff;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.45px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: bold;
+  padding: 16px 50px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px rgba(62, 62, 62, 0.2);
+  background-color: #FFAA3B;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+.top__contact:hover {
+  background-color: #fff;
+  color: #FFAA3B;
+  transition: all 0.3s ease 0s;
+}
+
+/*===================================
+  news
+===================================*/
+.news {
+  background-color: #f3f3f3;
+  padding: 120px 0;
+}
+@media (max-width: 375px) {
+  .news {
+    padding: 60px 0;
+  }
+}
+
+.news__card {
+  margin: 0 40px;
+  height: 659px;
+  background-color: #fff;
+  box-shadow: 0px 5px 12px rgba(62, 62, 62, 0.2);
+}
+@media (max-width: 600px) {
+  .news__card {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 375px) {
+  .news__card {
+    margin: 0 16px;
+  }
+}
+
+.news__container {
+  text-align: center;
+  margin: 0 60px;
+}
+@media (max-width: 700px) {
+  .news__container {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 600px) {
+  .news__container {
+    margin: 0;
+  }
+}
+
+.news__content {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  border-top: 1px #CECDCD solid;
+  background: url(../img/news__bgi.png) right 16.13px center/10.75px 21.5px no-repeat;
+}
+@media (max-width: 700px) {
+  .news__content {
+    display: block;
+    padding: 16px;
+  }
+}
+@media (max-width: 375px) {
+  .news__content {
+    background: url(../img/news__bgi.png) right 16.25px center/10.75px 21.5px no-repeat;
+    display: block;
+    padding: 16px;
+  }
+}
+
+.news__left {
+  display: flex;
+  align-items: center;
+}
+
+.last__content {
+  border-bottom: 1px #CECDCD solid;
+}
+
+.news__date {
+  font-size: 18px;
+  font-family: "Montserrat";
+  line-height: 26px;
+  color: #3e3e3e;
+  margin-right: 20px;
+  letter-spacing: 0.45px;
+  white-space: nowrap;
+}
+@media (max-width: 945px) {
+  .news__date {
+    font-size: 16px;
+  }
+}
+@media (max-width: 375px) {
+  .news__date {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.35px;
+  }
+}
+
+.news__label {
+  font-size: 14px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  line-height: 26px;
+  color: #3e3e3e;
+  padding: 2px 32px;
+  border-radius: 50px;
+  border: 2px #3B69FF solid;
+  margin-right: 40px;
+  letter-spacing: 0.35px;
+  white-space: nowrap;
+}
+@media (max-width: 1073px) {
+  .news__label {
+    padding: 2px 24px;
+  }
+}
+@media (max-width: 800px) {
+  .news__label {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 375px) {
+  .news__label {
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    line-height: 24px;
+    padding: 1px 16px;
+  }
+}
+
+.news__text {
+  font-size: 18px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  line-height: 28px;
+  color: #3e3e3e;
+  letter-spacing: 0.45px;
+  padding: 38px 0;
+  margin-right: 83px;
+}
+@media (max-width: 1073px) {
+  .news__text {
+    padding: 20px 0;
+    font-size: 16px;
+  }
+}
+@media (max-width: 945px) {
+  .news__text {
+    padding: 10px 0;
+    font-size: 15px;
+  }
+}
+@media (max-width: 800px) {
+  .news__text {
+    font-size: 14px;
+    margin-right: 39px;
+  }
+}
+@media (max-width: 600px) {
+  .news__text {
+    line-height: 20px;
+    padding: 12px 0 0 0;
+  }
+}
+@media (max-width: 375px) {
+  .news__text {
+    margin-right: 39px;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+  }
+}
+
+.more {
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: #3e3e3e;
+  font-family: "Montserrat";
+  line-height: 22.5px;
+  font-weight: bold;
+  padding: 21.5px 80px;
+  border: 1px #707070 solid;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 236px;
+  transition: all 0.3s ease 0s;
+}
+.more:hover {
+  color: #fff;
+  background-color: #3e3e3e;
+  transition: all 0.3s ease 0s;
+}
+@media (max-width: 375px) {
+  .more {
+    font-size: 18px;
+    letter-spacing: 3.6px;
+    padding: 16px 100px;
+    width: 268px;
+  }
+}
+
+/*===================================
+  service
+===================================*/
+.service {
+  width: 100%;
+  background-color: #3e3e3e;
+  height: 400px;
+  text-align: center;
+  margin-bottom: 215px;
+}
+@media (max-width: 375px) {
+  .service {
+    margin-bottom: 411px;
+  }
+}
+
+.service__container {
+  text-align: center;
+}
+
+.service__title {
+  color: #fff;
+}
+
+.service__card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-right: 45px;
+  padding-left: 45px;
+  padding-bottom: 60px;
+  box-shadow: 0px 5px 12px rgba(62, 62, 62, 0.2);
+}
+@media (max-width: 1073px) {
+  .service__card {
+    width: 90%;
+  }
+}
+@media (max-width: 900px) {
+  .service__card {
+    display: block;
+  }
+}
+@media (max-width: 375px) {
+  .service__card {
+    display: block;
+    width: 343px;
+    padding: 40px 16px;
+  }
+}
+
+.service__content {
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .service__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 700px) {
+  .service__content {
+    display: block;
+  }
+}
+
+.service__img {
+  width: 50px;
+  height: 50px;
+  margin: 8px;
+}
+
+.service__img__second {
+  width: 50px;
+  height: 32px;
+  margin: 16px 7px;
+}
+
+.service__img__third {
+  width: 50px;
+  height: 32px;
+  margin: 16px 7px;
+}
+
+.service__content__title {
+  font-size: 20px;
+  color: #3e3e3e;
+  font-family: "Montserrat";
+  line-height: 28px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  padding-top: 4px;
+}
+
+.service__content__text {
+  width: 230px;
+  padding-top: 15px;
+}
+.service__content__text p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  color: #3e3e3e;
+}
+@media (max-width: 900px) {
+  .service__content__text {
+    text-align: left;
+    width: 400px;
+  }
+}
+@media (max-width: 700px) {
+  .service__content__text {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 375px) {
+  .service__content__text {
+    width: 100%;
+  }
+}
+
+/*===================================
+  results
+===================================*/
+.result__container {
+  margin: 0 0 0 auto;
+  width: calc(100% - 40px);
+  background-color: #3e3e3e;
+  padding-left: 60px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+@media (max-width: 900px) {
+  .result__container {
+    margin-top: 320px;
+  }
+}
+@media (max-width: 700px) {
+  .result__container {
+    margin-top: 487px;
+  }
+}
+@media (max-width: 375px) {
+  .result__container {
+    width: 100%;
+    padding: 30px 40px;
+    text-align: center;
+  }
+}
+
+.result__title {
+  color: #fff;
+  padding: 0 0 56px 0;
+  padding: 0;
+}
+
+.slider {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.result__card {
+  width: 400px;
+  background-color: #fff;
+  margin-right: 40px;
+  margin-bottom: 100px;
+}
+
+.result__img {
+  width: inherit;
+}
+
+.result__card__text__box {
+  margin-top: 14px;
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+
+.result__card__title {
+  font-size: 20px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: bold;
+  color: #3e3e3e;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.result__card__text {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  color: #3e3e3e;
+}
+
+.viewall {
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  font-size: 20px;
+  line-height: 22.5px;
+  letter-spacing: 4px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: #fff;
+  padding: 20px 80px;
+  border: 1px #fff solid;
+  width: 289px;
+}
+.viewall:hover {
+  background-color: #fff;
+  color: #3e3e3e;
+  transition: all 0.3s ease 0s;
+}
+
+.slider { /*横幅94%で左右に余白を持たせて中央寄せ*/
+  width: 94%;
+  margin: 0 auto;
+}
+
+.slider .slick-slide {
+  margin: 0 10px;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute; /*絶対配置にする*/
+  top: 42%;
+  cursor: pointer; /*マウスカーソルを指マークに*/
+  outline: none; /*クリックをしたら出てくる枠線を消す*/
+  border-top: 2px solid #666; /*矢印の色*/
+  border-right: 2px solid #666; /*矢印の色*/
+  height: 15px;
+  width: 15px;
+}
+
+.slick-prev { /*戻る矢印の位置と形状*/
+  left: -1.5%;
+  transform: rotate(-135deg);
+}
+
+.slick-next { /*次へ矢印の位置と形状*/
+  right: -1.5%;
+  transform: rotate(45deg);
+}
+
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}
+
+.slick-dots {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  outline: none;
+  width: 8px; /*ドットボタンのサイズ*/
+  height: 8px; /*ドットボタンのサイズ*/
+  display: block;
+  border-radius: 50%;
+  background: #fff; /*ドットボタンの色*/
+  z-index: 1000;
+}
+
+.slick-dots .slick-active button {
+  background: #fff; /*ドットボタンの現在地表示の色*/
+}
+
+/*===================================
+  price
+===================================*/
+.price__container {
+  text-align: center;
+  padding-right: 160px;
+  padding-left: 160px;
+  padding-bottom: 120px;
+}
+@media (max-width: 945px) {
+  .price__container {
+    padding: 0 60px 80px 60px;
+  }
+}
+@media (max-width: 500px) {
+  .price__container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 375px) {
+  .price__container {
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 60px;
+  }
+}
+
+.price__title {
+  padding-top: 120px;
+}
+@media (max-width: 500px) {
+  .price__title {
+    padding-top: 60px;
+  }
+}
+@media (max-width: 375px) {
+  .price__title {
+    padding-top: 40px;
+  }
+}
+
+.grid__container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 262px calc(100% - 262px);
+  grid-template-rows: 60px 60px 60px;
+  border: #707070 1px solid;
+}
+@media (max-width: 700px) {
+  .grid__container {
+    grid-template-columns: 150px calc(100% - 150px);
+    grid-template-rows: 56px 56px 56px;
+  }
+}
+@media (max-width: 500px) {
+  .grid__container {
+    grid-template-columns: 100px calc(100% - 100px);
+    grid-template-rows: 56px 56px 56px;
+  }
+}
+@media (max-width: 375px) {
+  .grid__container {
+    grid-template-columns: 100px calc(100% - 100px);
+    grid-template-rows: 56px 56px 56px;
+  }
+}
+
+.grid {
+  line-height: 61px;
+  font-size: 24px;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+#g1 {
+  background-color: #3e3e3e;
+  border-bottom: 1px #fff solid;
+  color: #fff;
+}
+
+#g2 {
+  border-bottom: 1px solid #707070;
+  padding-left: 40px;
+  text-align: left;
+  color: #3e3e3e;
+}
+
+#g3 {
+  background-color: #3e3e3e;
+  border-bottom: 1px #fff solid;
+  color: #fff;
+}
+
+#g4 {
+  border-bottom: 1px solid #707070;
+  padding-left: 40px;
+  text-align: left;
+  color: #3e3e3e;
+}
+
+#g5 {
+  background-color: #3e3e3e;
+  border-bottom: 1px #fff solid;
+  color: #fff;
+}
+
+#g6 {
+  border-bottom: 1px solid #707070;
+  padding-left: 40px;
+  text-align: left;
+  color: #3e3e3e;
+}
+
+.price__text__box {
+  text-align: left;
+  margin-top: 8px;
+}
+
+.price__text {
+  font-size: 12px;
+  line-height: 20px;
+  color: #3e3e3e;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+/*===================================
+  comments
+===================================*/
+.comment__container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 90;
+  padding-bottom: 120px;
+}
+@media (max-width: 375px) {
+  .comment__container {
+    padding: 0 16px;
+  }
+}
+@media (max-width: 1073px) {
+  .comment__container {
+    padding: 0 40px;
+  }
+}
+
+.comment__card {
+  padding: 120px 60px;
+  margin-left: 40px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1607843137);
+}
+@media (max-width: 1073px) {
+  .comment__card {
+    margin: 0;
+  }
+}
+@media (max-width: 945px) {
+  .comment__card {
+    padding: 120px 40px;
+  }
+}
+@media (max-width: 600px) {
+  .comment__card {
+    padding: 60px 20px;
+  }
+}
+@media (max-width: 375px) {
+  .comment__card {
+    padding: 40px 20px;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+}
+
+.comment__title {
+  padding: 0;
+}
+@media (max-width: 375px) {
+  .comment__title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.feedback {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+@media (max-width: 375px) {
+  .feedback {
+    align-items: flex-start;
+    margin-top: 40px;
+  }
+}
+
+.people {
+  width: 100px;
+  margin-right: 32px;
+}
+@media (max-width: 700px) {
+  .people {
+    width: 80px;
+  }
+}
+@media (max-width: 375px) {
+  .people {
+    width: 60px;
+  }
+}
+
+.comment__text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #3e3e3e;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+}
+@media (max-width: 600px) {
+  .comment__text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 375px) {
+  .comment__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.comment__img {
+  margin-right: 40px;
+}
+@media (max-width: 375px) {
+  .comment__img {
+    display: none;
+  }
+}
+@media (max-width: 1073px) {
+  .comment__img {
+    display: none;
+  }
+}
+.comment__img img {
+  width: 534px;
+}
+
+.comment__back {
+  width: 980px;
+  height: 576px;
+  background-color: #3e3e3e;
+  position: absolute;
+  left: 0;
+  top: 148px;
+  z-index: -1;
+}
+@media (max-width: 375px) {
+  .comment__back {
+    width: 100%;
+    top: 60px;
+    height: 437px;
+  }
+}
+@media (max-width: 1073px) {
+  .comment__back {
+    width: 100%;
+  }
+}
+
+/*===================================
+  FAQs
+===================================*/
+.FAQs {
+  background: url(../img/QA.png) no-repeat center center/cover;
+  padding-bottom: 90px;
+}
+
+.faqs__container {
+  text-align: center;
+  padding: 0 40px;
+}
+@media (max-width: 1073px) {
+  .faqs__container {
+    margin-top: 120px;
+  }
+}
+@media (max-width: 600px) {
+  .faqs__container {
+    margin-top: 248px;
+  }
+}
+@media (max-width: 375px) {
+  .faqs__container {
+    margin-top: 0px;
+    padding: 0 16px;
+  }
+}
+
+.qa__title {
+  color: #3e3e3e;
+}
+
+.question {
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 612px;
+  margin: 0 0 0 auto;
+  margin-bottom: 32px;
+  text-align: left;
+  position: relative;
+}
+@media (max-width: 375px) {
+  .question {
+    width: 100%;
+  }
+}
+
+.question__top {
+  display: flex;
+  align-items: center;
+}
+
+.q {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Montserrat";
+  line-height: 19px;
+  padding: 3px 6px;
+  background-color: #3B69FF;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.que {
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.change {
+  display: none;
+}
+@media (max-width: 375px) {
+  .change {
+    display: block;
+  }
+}
+
+.plus {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  right: 16px;
+  top: 20px;
+}
+
+.minus {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  right: 16px;
+  top: 20px;
+}
+
+.none {
+  display: none;
+}
+
+.ans__box {
+  padding: 16px;
+  border-radius: 4px;
+  background-color: rgba(59, 105, 255, 0.2);
+  margin-top: 20px;
+}
+
+.ans {
+  color: #3e3e3e;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+/*===================================
+  access
+===================================*/
+.access {
+  padding: 120px 40px 120px 100px;
+  position: relative;
+}
+@media (max-width: 1073px) {
+  .access {
+    margin-bottom: 60px;
+    padding: 120px 40px 120px 40px;
+  }
+}
+@media (max-width: 375px) {
+  .access {
+    padding: 40px 16px 60px 16px;
+  }
+}
+
+.access__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 980px;
+  height: 504px;
+  background-color: #3e3e3e;
+  z-index: -1;
+}
+@media (max-width: 375px) {
+  .access__bg {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 1073px) {
+  .access__bg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.access__container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 375px) {
+  .access__container {
+    display: block;
+  }
+}
+@media (max-width: 1073px) {
+  .access__container {
+    display: block;
+  }
+}
+
+.access__title {
+  padding: 0;
+  color: #fff;
+}
+
+.adress {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  margin-top: 56px;
+}
+@media (max-width: 375px) {
+  .adress {
+    margin-bottom: 21px;
+  }
+}
+@media (max-width: 1073px) {
+  .adress {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+.access__btn {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  line-height: 22.5px;
+  letter-spacing: 2px;
+  font-family: "Montserrat";
+  padding: 20px 80px;
+  border: 1px solid #fff;
+  margin-top: 28px;
+}
+.access__btn:hover {
+  background-color: #fff;
+  color: #3e3e3e;
+  transition: all 0.3s ease 0s;
+}
+@media (max-width: 1073px) {
+  .access__btn {
+    width: 40%;
+    padding: 20px 40px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media (max-width: 375px) {
+  .access__btn {
+    padding: 20px 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1073px) {
+  .access__right iframe {
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .access__right iframe {
+    width: 343px;
+    height: 241px;
+  }
+}
+@media (max-width: 1073px) {
+  .access__right {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1073px) {
+  .map__top {
+    display: none;
+  }
+}
+
+.map__bottom {
+  display: none;
+}
+@media (max-width: 1073px) {
+  .map__bottom {
+    display: block;
+    margin-top: 40px;
+  }
+}
+
+/*===================================
+  contact
+===================================*/
+.contact {
+  width: 100%;
+  padding: 60px 160px;
+  background: url(../img/contact-bg@.png) no-repeat center center/cover;
+}
+@media (max-width: 1073px) {
+  .contact {
+    padding: 40px 50px;
+  }
+}
+@media (max-width: 700px) {
+  .contact {
+    padding: 40px 16px;
+  }
+}
+@media (max-width: 375px) {
+  .contact {
+    padding: 40px 16px;
+  }
+}
+
+.contact__card {
+  width: 100%;
+}
+
+.contact__card__head {
+  background: url(../img/contact-head.png) no-repeat center center/cover;
+  text-align: center;
+  padding: 60px 0;
+  border-radius: 12px 12px 0 0;
+}
+
+.contact__card__title {
+  color: #fff;
+  font-size: 36px;
+  line-height: 40px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.contact__card__text {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.contact__form {
+  background-color: #fff;
+  width: 100%;
+  padding: 60px 120px 60px 120px;
+}
+@media (max-width: 945px) {
+  .contact__form {
+    padding: 50px 50px;
+  }
+}
+@media (max-width: 800px) {
+  .contact__form {
+    padding: 40px 40px;
+  }
+}
+@media (max-width: 500px) {
+  .contact__form {
+    padding: 40px 12px;
+  }
+}
+
+.contact__form__row {
+  display: flex;
+  margin-bottom: 40px;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .contact__form__row {
+    display: block;
+  }
+}
+
+.contact__form__label {
+  font-size: 16px;
+  line-height: 24px;
+  color: #3e3e3e;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: bold;
+  width: 188px;
+  margin-right: 60px;
+}
+.contact__form__label label {
+  white-space: nowrap;
+}
+
+.contact__form__input {
+  width: 100%;
+}
+.contact__form__input select {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 6px 40px 6px 12px;
+  color: #3e3e3e;
+  background: url(../img/form__select.jpeg) no-repeat right 12px center/14px 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none; /* デフォルトの矢印を非表示 */
+}
+@media (max-width: 500px) {
+  .contact__form__input select {
+    width: 100%;
+  }
+}
+.contact__form__input select ::-ms-expand {
+  display: none; /* デフォルトの矢印を非表示(IE用) */
+}
+.contact__form__input [type=text] {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 12px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #707070;
+  color: #707070;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+@media (max-width: 500px) {
+  .contact__form__input [type=text] {
+    padding: 5px 0;
+  }
+}
+.contact__form__input [type=email] {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 12px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #707070;
+  color: #707070;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+@media (max-width: 500px) {
+  .contact__form__input [type=email] {
+    padding: 5px 0;
+  }
+}
+.contact__form__input [type=radio] {
+  margin-right: 8px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  color: #3e3e3e;
+}
+.contact__form__input [type=radio] span {
+  display: block;
+  padding-right: 40px;
+}
+.contact__form__input .male {
+  margin-right: 40px;
+}
+
+.contact__message {
+  width: 100%;
+}
+.contact__message textarea {
+  width: 100%;
+  height: 200px;
+  padding: 8px 12px;
+  margin-bottom: 38.75px;
+}
+@media (max-width: 500px) {
+  .contact__message textarea {
+    height: 160px;
+  }
+}
+
+.message__label {
+  margin-bottom: 4px;
+}
+
+.contact__form__check [type=checkbox] {
+  display: none;
+}
+.contact__form__check span {
+  display: inline-block;
+  padding-left: 49px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.contact__form__check span::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 1px solid #707070;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.contact__form__check span::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 1px solid #707070;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent url(../img/checkbox.png) no-repeat center center/contain;
+  display: none;
+}
+.contact__form__check [type=checkbox]:checked + span::after {
+  display: block;
+}
+
+@media (max-width: 500px) {
+  .contact__form__button {
+    text-align: center;
+  }
+}
+.contact__form__button [type=submit] {
+  background-color: #FFAA3B;
+  width: 173px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #fff;
+  letter-spacing: 0.45px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: bold;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.contact__form__button [type=submit]:hover {
+  color: #FFAA3B;
+  background-color: #f3f3f3;
+}
+
+.is-required {
+  position: relative;
+}
+.is-required::before {
+  content: "必須";
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: calc(100% + 12px);
+  background-color: #FF4646;
+  border-radius: 2px;
+  padding: 0px 8px;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/*===================================
+  footer
+===================================*/
+footer {
+  padding: 60px 160px;
+  background-color: #3e3e3e;
+}
+@media (max-width: 945px) {
+  footer {
+    padding: 60px 120px;
+  }
+}
+@media (max-width: 700px) {
+  footer {
+    padding: 40px 80px;
+  }
+}
+@media (max-width: 600px) {
+  footer {
+    padding: 60px 0;
+    text-align: center;
+  }
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 600px) {
+  .footer__container {
+    display: block;
+  }
+}
+
+.sns {
+  display: flex;
+  margin-bottom: 28.4px;
+}
+@media (max-width: 600px) {
+  .sns {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.sns img {
+  width: 36px;
+  margin-right: 32px;
+}
+@media (max-width: 600px) {
+  .sns img {
+    margin: 0 25px;
+  }
+}
+
+.footer__left__text p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
+  margin-bottom: 14px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+}
+@media (max-width: 600px) {
+  .footer__left__text p {
+    font-size: 14px;
+  }
+}
+
+.footer__right {
+  text-align: right;
+}
+@media (max-width: 600px) {
+  .footer__right {
+    text-align: center;
+  }
+}
+
+.footer__right__text {
+  font-size: 40px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  line-height: 77px;
+  color: #fff;
+  margin-bottom: 7px;
+}
+@media (max-width: 600px) {
+  .footer__right__text {
+    font-size: 32px;
+  }
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 15px;
+  font-family: "Montserrat";
+  letter-spacing: 0.3px;
+  color: #f3f3f3;
+}/*# sourceMappingURL=style.css.map */

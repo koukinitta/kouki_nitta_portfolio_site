@@ -1,0 +1,309 @@
+main {
+  max-width: 1280px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+@media (max-width: 1000px) {
+  main {
+    width: 90%;
+  }
+}
+@media (max-width: 878px) {
+  main {
+    width: 100%;
+  }
+}
+@media (max-width: 682px) {
+  main {
+    display: block;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 550px) {
+  main {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+.datas {
+  width: 40%;
+}
+@media (max-width: 682px) {
+  .datas {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 550px) {
+  .datas {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+
+.data {
+  display: flex;
+  padding: 10px 0;
+  text-align: center;
+}
+.data p {
+  font-size: 28px;
+}
+@media (max-width: 878px) {
+  .data p {
+    font-size: 24px;
+  }
+}
+@media (max-width: 418px) {
+  .data p {
+    font-size: 20px;
+  }
+}
+.data .item {
+  width: 180px;
+}
+@media (max-width: 682px) {
+  .data .item {
+    width: 168px;
+  }
+}
+@media (max-width: 454px) {
+  .data .item {
+    width: 149px;
+  }
+}
+@media (max-width: 418px) {
+  .data .item {
+    width: 120px;
+  }
+}
+@media (max-width: 682px) {
+  .data {
+    padding: 5px 0;
+  }
+}
+
+.counter {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+@media (max-width: 1000px) {
+  .counter {
+    gap: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .counter {
+    display: none;
+  }
+}
+
+.count {
+  border-radius: 15px;
+  height: 70px;
+  display: flex;
+  padding: 0px 0px;
+}
+.count p {
+  line-height: 70px;
+  font-size: 28px;
+}
+.count .count_item {
+  width: 160px;
+  text-align: center;
+  background-color: #f8fcc4;
+}
+@media (max-width: 1375px) {
+  .count .count_item {
+    width: 120px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 1233px) {
+  .count .count_item {
+    width: 100px;
+    font-size: 20px;
+  }
+}
+.count .minus, .count .plus {
+  width: 100px;
+  text-align: center;
+  padding: 0 25px;
+  cursor: pointer;
+}
+.count .minus:hover, .count .plus:hover {
+  opacity: 0.7;
+}
+@media (max-width: 1233px) {
+  .count .minus, .count .plus {
+    width: 70px;
+    padding: 0 15px;
+  }
+}
+.count .minus {
+  border-radius: 15px 0 0 15px;
+  background-color: rgb(119, 255, 255);
+}
+.count .plus {
+  border-radius: 0 15px 15px 0;
+  background-color: rgb(255, 152, 152);
+}
+
+.counter_tab {
+  display: none;
+  margin: 0 auto;
+}
+@media (max-width: 800px) {
+  .counter_tab {
+    display: block;
+  }
+}
+.every-time {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background-color: #f8fcc4;
+  border-radius: 30px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+.every-time:hover {
+  opacity: 0.8;
+  width: 320px;
+  height: 320px;
+  transition: all 0.3s ease 0s;
+  margin-bottom: 30px;
+}
+.every-time .next_top {
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 682px) {
+  .every-time {
+    margin: 0 auto;
+    height: 150px;
+    width: 80%;
+    margin-top: 30px;
+  }
+}
+
+.often {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background-color: #f8fcc4;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.often:hover {
+  opacity: 0.8;
+  width: 320px;
+  height: 320px;
+  transition: all 0.3s ease 0s;
+}
+.often .next_bottom {
+  font-size: 28px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 682px) {
+  .often {
+    margin: 0 auto;
+    height: 150px;
+    width: 80%;
+    margin-top: 30px;
+  }
+}
+
+.every-time_to {
+  cursor: pointer;
+}
+@media (max-width: 682px) {
+  .every-time_to {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}
+.every-time_to .count {
+  margin-bottom: 45px;
+}
+@media (max-width: 682px) {
+  .every-time_to .count {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+.every-time_to .count_item {
+  width: 160px;
+}
+.every-time_to .minus, .every-time_to .plus {
+  width: 100px;
+}
+.every-time_to .back {
+  font-size: 28px;
+  width: 360px;
+  border-radius: 15px;
+  background-color: #98ffa4;
+}
+.every-time_to .back:hover {
+  opacity: 0.7;
+}
+
+.often_to {
+  cursor: pointer;
+}
+@media (max-width: 682px) {
+  .often_to {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}
+.often_to .count {
+  margin-bottom: 45px;
+}
+@media (max-width: 682px) {
+  .often_to .count {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+.often_to .count_item {
+  width: 160px;
+}
+.often_to .minus, .often_to .plus {
+  width: 100px;
+}
+.often_to .back {
+  font-size: 28px;
+  width: 360px;
+  border-radius: 15px;
+  background-color: #98ffa4;
+}
+.often_to .back:hover {
+  opacity: 0.7;
+}
+
+.no-active {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

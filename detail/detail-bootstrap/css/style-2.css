@@ -1,0 +1,367 @@
+@charset "UTF-8";
+/*===================================
+  breakpoint
+===================================*/
+/*===================================
+  font
+===================================*/
+@import url("https://fonts.googleapis.com/css2?family=Monomaniac+One&family=Nanum+Gothic:wght@400;700&family=Noto+Rashi+Hebrew:wght@400;700&family=Zen+Kaku+Gothic+Antique:wght@400;700&display=swap");
+/*===================================
+  color
+===================================*/
+/*===================================
+  共通
+===================================*/
+body {
+  background-color: #fff;
+}
+
+.work__container {
+  width: 100%;
+}
+
+.section__title {
+  font-size: 20px;
+  font-family: "Monomaniac One";
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.section__title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  left: calc(50% - 25px);
+  height: 3px;
+  width: 50px;
+  z-index: 1000;
+  background-color: #586365;
+}
+
+/*===================================
+  header
+===================================*/
+header {
+  background-color: #586365;
+  height: 69px;
+}
+
+.header__container {
+  width: 100%;
+  padding: 0 40px;
+  max-width: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .header__container {
+    padding: 0 15px;
+  }
+}
+
+.hbg {
+  position: relative;
+  height: 39px;
+  width: 51px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+@media (max-width: 400px) {
+  .hbg {
+    height: 30px;
+    width: 42px;
+  }
+}
+
+.hbg div {
+  position: absolute;
+  left: 0px;
+  height: 5px;
+  width: 51px;
+  background-color: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+@media (max-width: 400px) {
+  .hbg div {
+    left: 0px;
+    width: 36px;
+    height: 3px;
+  }
+}
+
+.hbg div:nth-of-type(1) {
+  top: 0px;
+}
+@media (max-width: 400px) {
+  .hbg div:nth-of-type(1) {
+    top: 1px;
+  }
+}
+
+.hbg div:nth-of-type(2) {
+  top: 17px;
+}
+@media (max-width: 400px) {
+  .hbg div:nth-of-type(2) {
+    top: 14px;
+  }
+}
+
+.hbg div:nth-of-type(3) {
+  top: 34px;
+}
+@media (max-width: 400px) {
+  .hbg div:nth-of-type(3) {
+    top: 27px;
+  }
+}
+
+.header__logo {
+  font-family: "Monomaniac One";
+  font-size: 20px;
+  line-height: 69px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+@media (max-width: 400px) {
+  .header__logo {
+    display: none;
+  }
+}
+
+/*===================================
+  detail
+===================================*/
+.detail {
+  padding: 0 100px;
+}
+@media (max-width: 850px) {
+  .detail {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 500px) {
+  .detail {
+    padding: 0 20px;
+  }
+}
+
+.detail__title {
+  font-family: "Monomaniac One";
+  font-size: 32px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.first {
+  display: flex;
+  margin-bottom: 60px;
+}
+@media (max-width: 1000px) {
+  .first {
+    display: block;
+  }
+}
+
+.first__img {
+  width: 50%;
+}
+@media (max-width: 1000px) {
+  .first__img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.first__img img {
+  width: 100%;
+  box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+
+.first__text {
+  width: 50%;
+  padding: 0 0 0 30px;
+}
+@media (max-width: 1000px) {
+  .first__text {
+    width: 100%;
+    padding: 0;
+  }
+}
+.first__text h2 {
+  font-family: "Zen Kaku Gothic Antique";
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333;
+}
+.first__text p {
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  color: #333;
+}
+.first__text a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-family: "Zen Kaku Gothic Antique";
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+.second {
+  display: flex;
+  margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+  .second {
+    display: block;
+  }
+}
+
+.second__img {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .second__img {
+    width: 100%;
+  }
+}
+.second__img img {
+  width: 45%;
+  box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+
+.second__text {
+  width: 50%;
+  padding: 0 30px 0 0;
+}
+@media (max-width: 767px) {
+  .second__text {
+    width: 100%;
+    padding: 0;
+  }
+}
+.second__text h2 {
+  font-family: "Zen Kaku Gothic Antique";
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333;
+}
+.second__text p {
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.thoughts {
+  margin-bottom: 80px;
+}
+@media (max-width: 767px) {
+  .thoughts {
+    margin-bottom: 45px;
+  }
+}
+.thoughts h2 {
+  font-family: "Zen Kaku Gothic Antique";
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333;
+}
+.thoughts p {
+  font-family: "Zen Kaku Gothic Antique";
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.url__button {
+  text-align: center;
+  margin: 0 auto;
+  width: 400px;
+  height: 91px;
+  position: relative;
+  background-color: #FFC042;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3764705882);
+  margin-top: 30px;
+  margin-bottom: 80px;
+  transition: all 0.3s ease 0s;
+  display: block;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .url__button {
+    width: 250px;
+    height: 61px;
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+}
+.url__button:hover {
+  cursor: pointer;
+  background: #586365;
+  transition: all 0.3s ease 0s;
+}
+.url__button:hover p {
+  color: #FFC042;
+  transition: all 0.3s ease 0s;
+}
+.url__button:active {
+  box-shadow: none;
+  transform: translateY(5px);
+  transition: all 0s ease 0s;
+}
+.url__button p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Monomaniac One";
+  font-size: 32px;
+  color: #586365;
+  font-weight: bold;
+  letter-spacing: 3px;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .url__button p {
+    font-size: 28px;
+  }
+}
+
+/*===================================
+  footer
+===================================*/
+footer {
+  width: 100%;
+  padding: 0 40px;
+  background-color: #586365;
+  height: 69px;
+}
+
+.footer__container {
+  text-align: center;
+}
+
+.footer__text {
+  color: #fff;
+  font-family: "Monomaniac One";
+  line-height: 69px;
+  font-size: 22px;
+  letter-spacing: 3px;
+}/*# sourceMappingURL=style-2.css.map */

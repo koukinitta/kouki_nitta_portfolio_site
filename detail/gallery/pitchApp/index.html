@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>投手管理データ</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main>
+    <div class="datas">
+
+      <div class="data">
+        <p class="item">投球回：</p>
+        <p><span class="result">0</span>回<span id="fraction">0</span>/3</p>
+      </div>
+      <div class="data">
+        <p class="item">対打者：</p>
+        <p class="result">0</p>
+      </div>
+      <div class="data">
+        <p class="item">投球数：</p>
+        <p class="result">0</p>
+      </div>
+      <div class="data">
+        <p class="item">ストライク：</p>
+        <p class="result">0</p>
+      </div>
+      <div class="data">
+        <p class="item">犠打：</p>
+        <p class="result">0</p>
+      </div>
+      <div class="data">
+        <p class="item">被安打：</p>
+        <p class="result">0</p>
+      </div>
+      <div class="data">
+        <p class="item">四死球：</p>
+        <p class="result">0</p>
+      </div>
+      <div class="data">
+        <p class="item">奪三振：</p>
+        <p class="result">0</p>
+      </div>
+      <div class="data">
+        <p class="item">失点：</p>
+        <p class="result">0</p>
+      </div>
+      <div class="data">
+        <p class="item">自責点：</p>
+        <p class="result">0</p>
+      </div>
+      <div class="data">
+        <p class="item">防御率：</p>
+        <p class="result">0.00</p>
+      </div>
+      <div class="data">
+        <p class="item">被打率：</p>
+        <p class="result">0.00</p>
+      </div>
+      <div class="data">
+        <p class="item">奪三振率：</p>
+        <p class="result">0.00</p>
+      </div>
+      <div class="data">
+        <p class="item">WHIP：</p>
+        <p class="result">0.00</p>
+      </div>
+    </div>
+
+    <div class="counter" id="counter">
+
+      <div class="count">
+        <p class="minus">−</p>
+        <p class="count_item">投球回</p>
+        <p class="plus">＋</p>
+      </div>
+      <div class="count">
+        <p class="minus">−</p>
+        <p class="count_item">対打者</p>
+        <p class="plus">＋</p>
+      </div>
+      <div class="count">
+        <p class="minus">−</p>
+        <p class="count_item">投球数</p>
+        <p class="plus">＋</p>
+      </div>
+      <div class="count">
+        <p class="minus">−</p>
+        <p class="count_item">ストライク</p>
+        <p class="plus">＋</p>
+      </div>
+      <div class="count">
+        <p class="minus">−</p>
+        <p class="count_item">犠打</p>
+        <p class="plus">＋</p>
+      </div>
+      <div class="count">
+        <p class="minus">−</p>
+        <p class="count_item">被安打</p>
+        <p class="plus">＋</p>
+      </div>
+      <div class="count">
+        <p class="minus">−</p>
+        <p class="count_item">四死球</p>
+        <p class="plus">＋</p>
+      </div>
+      <div class="count">
+        <p class="minus">−</p>
+        <p class="count_item">奪三振</p>
+        <p class="plus">＋</p>
+      </div>
+      <div class="count">
+        <p class="minus">−</p>
+        <p class="count_item">失点</p>
+        <p class="plus">＋</p>
+      </div>
+      <div class="count">
+        <p class="minus">−</p>
+        <p class="count_item">自責点</p>
+        <p class="plus">＋</p>
+      </div>
+
+    </div>
+
+    <div class="counter_tab">
+      <div class="every-time" id="every-time">
+        <p class="next_top">
+          一球ごと
+        </p>
+      </div>
+      <div class="often" id="often">
+        <p class="next_bottom">
+          打席結果
+        </p>
+      </div>
+    </div>
+
+    <div class="every-time_to no-active" id="every-time_to">
+      <div class="count">
+        <p class="minus">−</p>
+        <p class="count_item">投球回</p>
+        <p class="plus">＋</p>
+      </div>
+      <div class="count">
+        <p class="minus">−</p>
+        <p class="count_item">対打者</p>
+        <p class="plus">＋</p>
+      </div>
+      <div class="count">
+        <p class="minus">−</p>
+        <p class="count_item">投球数</p>
+        <p class="plus">＋</p>
+      </div>
+      <div class="count">
+        <p class="minus">−</p>
+        <p class="count_item">ストライク</p>
+        <p class="plus">＋</p>
+      </div>
+      <div class="count">
+        <p class="minus">−</p>
+        <p class="count_item">犠打</p>
+        <p class="plus">＋</p>
+      </div>
+      <div class="count">
+        <p class="count_item back">戻る</p>
+      </div>
+    </div>
+
+    <div class="often_to no-active" id="often_to">
+      <div class="count">
+        <p class="minus">−</p>
+        <p class="count_item">被安打</p>
+        <p class="plus">＋</p>
+      </div>
+      <div class="count">
+        <p class="minus">−</p>
+        <p class="count_item">四死球</p>
+        <p class="plus">＋</p>
+      </div>
+      <div class="count">
+        <p class="minus">−</p>
+        <p class="count_item">奪三振</p>
+        <p class="plus">＋</p>
+      </div>
+      <div class="count">
+        <p class="minus">−</p>
+        <p class="count_item">失点</p>
+        <p class="plus">＋</p>
+      </div>
+      <div class="count">
+        <p class="minus">−</p>
+        <p class="count_item">自責点</p>
+        <p class="plus">＋</p>
+      </div>
+      <div class="count">
+        <p class="count_item back">戻る</p>
+      </div>
+    </div>
+
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>

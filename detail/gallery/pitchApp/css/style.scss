@@ -1,0 +1,287 @@
+@charset 'utf-8';
+
+//スニペットの仕様の関係上、$を変数の前につけて、インナーの画面幅を入力してください
+$layout-width-inner: 1280px;
+//ブレークポイント
+$breakpoints: (
+   "w418":"(max-width: 418px)",
+   "w454":"(max-width: 454px)",
+   "w550":"(max-width: 550px)",
+   "w682":"(max-width: 682px)",
+   "sp":"(max-width: 767px)",
+   "tab":"(min-width: 768px) and (max-width:#{$layout-width-inner})",
+   "w800":"(max-width: 800px)",
+   "w878":"(max-width: 878px)",
+   "w1000":"(max-width: 1000px)",
+   "w1233":"(max-width: 1233px)",
+   "pc":"(min-width: #{$layout-width-inner})",
+   "w1375":"(max-width: 1375px)"
+)!default;
+//メディアクエリ
+@mixin mq($breakpoint: sp) {
+   @media #{map-get($breakpoints, $breakpoint)}{
+       @content;
+   }
+}
+
+main {
+  max-width: 1280px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-between;
+  @include mq(w1000) {
+    width: 90%;
+  }
+  @include mq(w878) {
+    width: 100%;
+  }
+  @include mq(w682) {
+    display: block;
+    margin-top: 20px;
+  }
+  @include mq(w550) {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+.datas {
+  width: 40%;
+  @include mq(w682) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 50px;
+    margin: 0 auto;
+  }
+  @include mq(w550) {
+    column-gap: 20px;
+  }
+}
+.data {
+  display: flex;
+  padding: 10px 0;
+  text-align: center;
+  p {
+    font-size: 28px;
+    @include mq(w878) {
+      font-size: 24px;
+    }
+    @include mq(w418) {
+      font-size: 20px;
+    }
+  }
+  .item {
+    width: 180px;
+    @include mq(w682) {
+      width: 168px;
+    }
+     @include mq(w454) {
+      width: 149px;
+     }
+    @include mq(w418) {
+      width: 120px;
+    }
+  }
+  @include mq(w682) {
+    padding: 5px 0;
+  }
+}
+
+
+.counter {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  @include mq(w1000) {
+    gap: 20px;
+  }
+  @include mq(w800) {
+    display: none;
+  }
+}
+.count {
+  border-radius: 15px;
+  height: 70px;
+  display: flex;
+  padding: 0px 0px;
+  p {
+    line-height: 70px;
+    font-size: 28px;
+  }
+  .count_item {
+    width: 160px;
+    text-align: center;
+    background-color: #f8fcc4;
+    @include mq(w1375) {
+      width: 120px;
+      font-size: 24px;
+    }
+    @include mq(w1233) {
+      width: 100px;
+      font-size: 20px;
+    }
+  }
+  .minus,.plus {
+    width: 100px;
+    text-align: center;
+    padding: 0 25px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+    @include mq(w1233) {
+      width: 70px;
+      padding: 0 15px;
+    }
+  }
+  .minus {
+    border-radius: 15px 0 0 15px;
+    background-color: rgb(119, 255, 255);
+  }
+  .plus {
+    border-radius: 0 15px 15px 0;
+    background-color: rgb(255, 152, 152);
+  }
+}
+
+.counter_tab {
+  display: none;
+  margin: 0 auto;
+  @include mq(w800) {
+    display: block;
+  }
+  @include mq(w550) {
+  }
+}
+.every-time {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background-color: #f8fcc4;
+  border-radius: 30px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+    width: 320px;
+    height: 320px;
+    transition: all 0.3s ease 0s;
+    margin-bottom: 30px;
+  }
+  .next_top {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  @include mq(w682) {
+    margin: 0 auto;
+    height: 150px;
+    width: 80%;
+    margin-top: 30px;
+  }
+}
+.often {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background-color: #f8fcc4;
+  border-radius: 30px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+    width: 320px;
+    height: 320px;
+    transition: all .3s ease 0s;
+  }
+
+  .next_bottom {
+    font-size: 28px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  @include mq(w682) {
+    margin: 0 auto;
+    height: 150px;
+    width: 80%;
+    margin-top: 30px;
+  }
+}
+
+.every-time_to {
+  // display: none;
+  cursor: pointer;
+  @include mq(w682) {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .count {
+    margin-bottom: 45px;
+    @include mq(w682){
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+  }
+  .count_item {
+    width: 160px;
+  }
+  .minus,.plus {
+    width: 100px;
+  }
+  .back {
+    font-size: 28px;
+    width: 360px;
+    border-radius: 15px;
+    background-color: #98ffa4;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+.often_to {
+  // display: none;
+  cursor: pointer;
+  @include mq(w682) {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .count {
+    margin-bottom: 45px;
+    @include mq(w682){
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+  }
+  .count_item {
+    width: 160px;
+  }
+  .minus,.plus {
+    width: 100px;
+  }
+  .back {
+    font-size: 28px;
+    width: 360px;
+    border-radius: 15px;
+    background-color: #98ffa4;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+
+.no-active {
+  display: none;
+}
