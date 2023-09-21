@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>「TODOアプリ」の紹介</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style-2.css">
+</head>
+<body>
+  <header>
+    <div class="header__container">
+      <div class="hbg">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <h1 class="header__logo">NITTA KOUKI’s portfolio site</h1>
+    </div>
+  </header>
+
+  <div class="detail">
+    <div class="work__container">
+      <h1 class="detail__title">TODOアプリ</h1>
+      <div class="first">
+        <div class="first__img"><img src="./img/top.png" alt=""></div>
+        <div class="first__text">
+          <h2>制作期間</h2>
+          <p>2023年8月28日〜2023年9月15日</p>
+          <h2>制作背景</h2>
+          <p>今までフロントエンドしか触ったことがなかったのですが、大学3年時の夏季インターンでC#を用いたバックエンド開発について学ぶことができ、バックエンドにも興味を持つことができたので作成してみました。また、せっかくバックエンドを触るので、データベースとも連携して何か一つアプリを作ってみたいという思いから作成してみました。<br>
+            今後は、現在フロントエンド部分を制作している投手の成績管理アプリや野球制作アプリにも、バックエンドとデータベースを組み合わせて、一つのアプリを完成させたいと思っています。</p>
+        </div>
+      </div>
+      <div class="second">
+        <div class="second__text">
+          <h2>使用したツール</h2>
+          <p>今回はフロントエンド部分がHTML,CSS,JavaScriptを用いて制作し、バックエンド部分がnode.jsを用いて作成しました。また、データベースはjson形式のMongoDBを使用しました。<br>
+            node.jsを採用した使用した理由は、慣れているjavascriptの方がバックエンドの仕組みを理解しやすいと思ったためです。<br>Node.jsのフレームワークはexpressを用いました。非常に人気のあるフレームワークであるため、わからないことを調べるときは様々な記事が出てきて助かりました。また、JavaScriptのライブラリは、HTTP通信を簡単に行う事のできるaxiosを使いました。フロントエンドが完成していないときは、Postmanでリクエストを投げるなどして動作を確認していました。<br>データベースに関しては、まだ知識もなく、今回はnode.jsをメインに扱いたかったため、比較的簡単に導入する事のできるMongoDBを使用しました。MongoDBについて調べている時に、json形式のためnode.jsやaxiosとの相性がいいという記事を見たもの決め手です。
+          </p>
+        </div>
+        <div class="second__img">
+          <img src="./img/first.png" alt="">
+          <img src="./img/second.png" alt="">
+        </div>
+      </div>
+      <div class="thoughts">
+        <h2>作り終えての感想</h2>
+        <p>今回作ってみて、難しいと思ったことは、formで送信した内容をバックエンド側で処理し、フロントエンドで表示するなどのフロントエンドとバックエンドの連携です。今までフロントエンドの設計しかしたことがなかったこともあり、for属性やname属性をどのように使うのかわからないままでしたが、今回の制作で深く調べることができ、理解を深めることができました。<br>
+          今回はNode.jsを使って制作しましたが、C#やJavaなど、主要なバックエンド言語も学んでみたいと感じました。またNoSQLのMongoDBを用いましたが、MySQLなどのデータベースについても興味が湧きました。<br>先述しましたが、今後は、現在フロントエンド部分を制作している投手の成績管理アプリや野球制作アプリにも、バックエンドとデータベースを組み合わせて、一つのアプリを完成させたいと思っています。</p>
+      </div>
+      <a href="../gallery/todoapp/public/index.html" class="url__button"><p>このサイトを見る</p></a>
+    </div>
+  </div>
+
+  <div class="drawer">
+    <div class="hbg">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="drawer__box">
+      <div class="drawer__menu"><a href="../../index.html#gallery">Gallery</a></div>
+      <div class="drawer__menu"><a href="../../index.html#profile">Profile</a></div>
+      <div class="drawer__menu"><a href="../../index.html#contact">Contact</a></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer__container">
+      <p class="footer__text">©️nitusta</p>
+    </div>
+  </footer>
+  <script src="./js/wow.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
